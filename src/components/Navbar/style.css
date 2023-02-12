@@ -31,3 +31,14 @@
 .navbar a:hover::before {
   scale: 1;
 }
+
+.active{
+    cursor: default;
+    pointer-events: none;
+    transition: .35s;
+}
+
+.active:not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
