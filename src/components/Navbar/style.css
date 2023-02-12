@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    display: inline-block;
+}
+
+.navbar a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.35s;
+}
+
+.navbar a:hover::before {
+  scale: 1;
+}
