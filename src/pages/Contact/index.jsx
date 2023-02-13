@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { CounterContext } from "../../context/CounterContext";
+import { useCounterContext } from "../../hooks/useCounterContext";
 
 export default function Contact() {
-  const { counter } = useContext(CounterContext);
+  const { counter } = useCounterContext();
   return (
     <div className="contact">
       <h1>Contact</h1>

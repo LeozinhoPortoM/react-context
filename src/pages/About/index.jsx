@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { CounterContext } from "../../context/CounterContext";
+import { useCounterContext } from "../../hooks/useCounterContext";
 
 export default function About() {
-  const { counter } = useContext(CounterContext);
+  const { counter } = useCounterContext();
   return (
     <div className="about">
       <h1>About</h1>
